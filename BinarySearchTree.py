@@ -94,28 +94,19 @@ def levelorder(Node):
     print(output)
 
 
-'''Example 1'''
-r = Node(4)
-r.insert(2)
-r.insert(1)
-r.insert(3)
-r.insert(6)
-r.insert(5)
-r.insert(7)
+'''Example 1
+按4213657插入，打印结果，然后删除26，再打印结果'''
+r = Node(4); r.insert(2); r.insert(1)
+r.insert(3); r.insert(6); r.insert(5); r.insert(7)
 levelorder(r)
-r.delete(2)
-r.delete(6)
+r.delete(2); r.delete(6)
 levelorder(r)
 
-'''Example 2'''
+'''Example 2
+按1234567插入，打印结果，然后删除26，再打印结果'''
 r = Node(1)
-r.insert(2)
-r.insert(3)
-r.insert(4)
-r.insert(5)
-r.insert(6)
-r.insert(7)
+r.insert(2); r.insert(3); r.insert(4)
+r.insert(5); r.insert(6); r.insert(7)
 levelorder(r)
-r.delete(2)
-r.delete(6)
+r.delete(2); r.delete(6)
 levelorder(r)
